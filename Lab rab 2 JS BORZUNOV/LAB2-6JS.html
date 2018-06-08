@@ -1,20 +1,20 @@
 <html>
 <body>
 <script>
-function fib(n) 
+function fibNB(n) 
 {
-	var nVal1 = 1, nRes = 1;
+	var nVal1NB = 1, nResNB = 1;
 	for (var i = 3; i <= n; i++) 
 	{
-		var nVal2 = nVal1 + nRes;
-		nVal1 = nRes;
-		nRes = nVal2;
+		var nVal2NB = nVal1NB + nResNB;
+		nVal1NB = nResNB;
+		nResNB = nVal2NB;
 	}	
-	return nRes;
+	return nResNB;
 }
 
 n = prompt("Введите число", '');
-alert(fib(n));
+alert(fibNB(n));
 </script>
 </body>
 </html>
