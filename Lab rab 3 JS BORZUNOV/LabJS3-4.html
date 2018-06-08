@@ -1,12 +1,12 @@
 <html>
 <body>
 <script>
-function Calculator()
+function CalculatorNB()
 {
 	this.read = function()
 	{
-		this.Val1 = +prompt('Введите первое число', '');
-		this.Val2 = +prompt('Введите второе число', '');
+		this.Val1NB = +prompt('Введите первое числоNB', '');
+		this.Val2NB = +prompt('Введите второе числоNB', '');
 	};
 	this.sum = function()
 	{
@@ -17,10 +17,10 @@ function Calculator()
 		return this.Val1 * this.Val2;
 	};
 }
-var calculator = new Calculator();
-calculator.read();
-alert("Сумма введенных чисел: " + calculator.sum());
-alert("Произведение введенных чисел: " + calculator.mul());
+var calculatorNB = new CalculatorNB();
+calculatorNB.read();
+alert("Сумма введенных чисел: " + calculatorNB.sum());
+alert("Произведение введенных чисел: " + calculatorNB.mul());
 </script>
 </body>
 </html>
