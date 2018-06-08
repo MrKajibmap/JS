@@ -3,15 +3,15 @@
 <script>
 function sum(a)
 {
-	var nNum = a;
+	var nNumNB = a;
 	function f(b)
 	{
-		nNum += b;
+		nNumNB += b;
 		return f;
 	}
 	f.toString = function()
 	{
-		return nNum;
+		return nNumNB;
 	};
 	return f;
 }
