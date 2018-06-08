@@ -1,37 +1,37 @@
 <html>
 <body>
 <script>
-function sumTo1(nVal)
+function sumTo1NB(nValNB)
 {
-	var sum = 0;
-	for (var i=1;i<=nVal;i++)
+	var sumNB = 0;
+	for (var i=1;i<=nValNB;i++)
 	{
-		sum+=i;
+		sumNB+=i;
 	}
-	return sum;
+	return sumNB;
 }
 
-function sumTo2(nVal)
+function sumTo2NB(nValNB)
 {
-	if (nVal==0)
+	if (nValNB==0)
 	{
 		return 0;
 	}
 	else
 	{
-		return nVal+sumTo2(nVal-1);
+		return nValNB+sumTo2NB(nValNB-1);
 	}
 }
 
-function sumTo3(nVal)
+function sumTo3NB(nValNB)
 {
-	return nVal * (nVal + 1) / 2;
+	return nValNB * (nValNB + 1) / 2;
 }
 
 
-alert(sumTo1(7));
-alert(sumTo2(7));
-alert(sumTo3(7));
+alert(sumTo1NB(7));
+alert(sumTo2NB(7));
+alert(sumTo3NB(7));
 </script>
 </body>
 </html>
