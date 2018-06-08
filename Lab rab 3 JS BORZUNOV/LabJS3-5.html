@@ -1,9 +1,9 @@
 <html>
 <body>
 <script>
-function Calculator()
+function CalculatorNB()
 {
-	var method =
+	var methodNB =
 	{
 		"-": function(a, b)
 		{
@@ -24,20 +24,20 @@ function Calculator()
 		method[name] = func;
 	};
 }
-var calc = new Calculator;
-calc.addMethod("*", function(a, b)
+var calcNB = new CalculatorNB;
+calcNB.addMethod("*", function(a, b)
 {
 	return a * b;
 });
-calc.addMethod("/", function(a, b) {
+calcNB.addMethod("/", function(a, b) {
   return a / b;
 });
-calc.addMethod("**", function(a, b) {
+calcNB.addMethod("**", function(a, b) {
   return Math.pow(a, b);
 });
 
-var a = calc.calculate("6 * 5");
-alert(a);
+var aNB = calcNB.calculate("6 * 5");
+alert(aNB);
 </script>
 </body>
 </html>
