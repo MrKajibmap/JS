@@ -1,25 +1,25 @@
 <html>
-<body>
-<script>
-var sMinNB = prompt("Введите минимальное число диапазона ", '');
-var sMaxNB = prompt("Введите максимальное число диапазона ", '');
-var nMinNB = parseInt(sMinNB, 10); 
-var nMaxNB = parseInt(sMaxNB, 10); 
-for (var i=nMinNB;i<=nMaxNB;i++)
-{
-	var flgNB=0;
-	for (var j=nMinNB;j<i;j++)
-	{
-		if (i%j == 0)
-		{
-			flgNB=1;
-		}
-	}
-	if (flgNB==0)
-	{
-		alert(i);
-	}
-}
-</script>
-</body>
+	<body>
+		<script>
+			var Min_Value = prompt("Введите минимальное число диапазона ", '');
+			var Max_Value= prompt("Введите максимальное число диапазона ", '');
+			var n_Min_Value = parseInt(n_Min_Value, 10); 
+			var n_Max_Value = parseInt(n_Max_Value, 10); 
+			for (var i=nMinNB;i<=nMaxNB;i++)
+			{
+				var Flag_Value=0;
+				for (var j=n_Min_Value;j<i;j++)
+				{
+					if (i%j == 0)
+					{
+						Flag_Value=1;
+					}
+				}
+				if (Flag_Value==0)
+				{
+					alert(i);
+				}
+			}
+		</script>
+	</body>
 </html>
