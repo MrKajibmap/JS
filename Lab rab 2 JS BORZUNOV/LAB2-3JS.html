@@ -1,23 +1,23 @@
 <html>
-<body>
-<script>
-function pow(xNB, nNB)
-{
-	var nResNB = xNB;
-	for (var i = 1; i < nNB; i++)
-	{
-		nResNB *= xNB;
-	}
-	return nResNB;
-}
+	<body>
+		<script>
+			function Func_Pow(First_Val, Second_Val)
+			{
+				var nResNB = First_Val;
+				for (var i = 1; i < Second_Val; i++)
+				{
+					Reslt *= First_Val;
+				}
+				return Reslt;
+			}
 
-var xNB = prompt("Введите xNB", '');
-var nNB = prompt("Введите nNB", '');
-while (nNB<1 && nNB!= null) 
-{
-	nNB = prompt("Введите натуральное число nNB", '');
-}
-alert(pow(xNB, nNB));
-</script>
-</body>
+			var First_Val = prompt("Введите First_Val", '');
+			var Second_Val = prompt("Введите Second_Val", '');
+			while (Second_Val<1 && Second_Val!= null) 
+			{
+				nNB = prompt("Введите натуральное число Second_Val", '');
+			}
+			alert(Func_Pow(First_Val, Second_Val));
+		</script>
+	</body>
 </html>
