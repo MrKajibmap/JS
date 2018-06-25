@@ -1,35 +1,35 @@
 <html>
-<body>
-<script>
-nB = prompt('Введите число', '');
-nNB= parseInt(n);
-var nArr = [];
-for (var i = 2; i < nNB;i++)
-{
-	nArr[i] = true
-}
-var SValB = 2;
-do
-{
-	for (i=2*SValB;i<nN;i+=SValB)
-	{
-		nArr[i] = false;
-	}
-	for (i = SValB+1; i < nNB;i++)
-	{
- 		if (nArr[i]) break;
-	}
-	SValB= i;
-} while (SValB * SValB < nN)
-var nSum = 0;
-for (i = 0; i < nArr.length;i++)
-{
-	if (nArr[i])
-	{
-		nSumB += i;
-	}
-}
-alert(nSumB);
-</script>
-</body>
+	<body>
+		<script>
+			Value = prompt('Введите число', '');
+			Value_N= parseInt(Value);
+			var Array = [];
+			for (var i = 2; i < Value;i++)
+			{
+				Array[i] = true
+			}
+			var Value = 2;
+			do
+			{
+				for (i=2*Value;i<Value_N;i+=Value)
+				{
+					Array[i] = false;
+				}
+				for (i = Value+1; i < Value_N;i++)
+				{
+					if (Array[i]) break;
+				}
+				Value= i;
+			} while (Value * Value < Value_N)
+			var Sum = 0;
+			for (i = 0; i < Array.length;i++)
+			{
+				if (Array[i])
+				{
+					Sum += i;
+				}
+			}
+			alert(Sum);
+		</script>
+	</body>
 </html>
