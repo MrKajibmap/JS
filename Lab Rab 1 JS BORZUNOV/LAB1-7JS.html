@@ -1,31 +1,31 @@
 <html>
-<body>
-<script>
-var sContactNB = prompt('Кто пришел?','');
-if (sContactNB == null)
-{
-	alert('Вход отменен');
-}
-else if (sContactNB == 'Админ')
-{
-	var sPasswordNB = prompt('Пароль?','');
-	if (sPasswordNB == 'Черный Властелин')
-	{
-		alert('Добро пожаловать!');
-	}
-	else if (sPasswordNB == null)
-	{
-		alert('Вход отменен');
-	}
-	else
-	{
-		alert('Пароль неверен');
-	}
-}
-else 
-{
-	alert('я вас не знаю');
-}
-</script>
-</body>
+	<body>
+		<script>
+			var Contact_Value = prompt('Кто пришел?','');
+			if (Contact_Value == null)
+			{
+				alert('Вход отменен');
+			}
+			else if (Contact_Value == 'Админ')
+			{
+				var Password_Value = prompt('Пароль?','');
+				if (Password_Value == 'qwerty123456VeryHardPass')
+				{
+					alert('Добро пожаловать!');
+				}
+				else if (Password_Value == null)
+				{
+					alert('Вход отменен');
+				}
+				else
+				{
+					alert('Пароль неверен');
+				}
+			}
+			else 
+			{
+				alert('Добрый вечер!');
+			}
+		</script>
+	</body>
 </html>
