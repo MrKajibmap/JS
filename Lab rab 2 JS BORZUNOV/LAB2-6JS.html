@@ -1,20 +1,20 @@
 <html>
-<body>
-<script>
-function fibNB(n) 
-{
-	var nVal1NB = 1, nResNB = 1;
-	for (var i = 3; i <= n; i++) 
-	{
-		var nVal2NB = nVal1NB + nResNB;
-		nVal1NB = nResNB;
-		nResNB = nVal2NB;
-	}	
-	return nResNB;
-}
+	<body>
+		<script>
+			function Fibonacci_Func(Value) 
+			{
+				var Val_First = 1, nRes = 1;
+				for (var i = 3; i <= Value; i++) 
+				{
+					var Val_Sec = Val_First + nRes;
+					Val_First = nRes;
+					nRes = Val_Sec;
+				}	
+				return nRes;
+			}
 
-n = prompt("Введите число", '');
-alert(fibNB(n));
-</script>
-</body>
+			Value = prompt("Введите число", '');
+			alert(Fibonacci_Func(Value));
+		</script>
+	</body>
 </html>
