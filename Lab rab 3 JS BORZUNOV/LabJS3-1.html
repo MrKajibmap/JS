@@ -1,26 +1,26 @@
 <html>
-<body>
-<script>
-var calcBORZ = 
-{
-	readBORZ: function()
-	{
-		this.a = +prompt('Введите первое число', '');
-		this.b = +prompt('Введите второе число', '');
-	},
-	sumBORZ: function()
-	{
-		return this.a + this.b;
-	},
-	mulBORZ: function()
-	{
-		return this.a * this.b;
-	}
-}
+	<body>
+		<script>
+			var Calcul = 
+			{
+				read_func: function()
+				{
+					this.a = +prompt('Введите первое число', '');
+					this.b = +prompt('Введите второе число', '');
+				},
+				sum_func: function()
+				{
+					return this.a + this.b;
+				},
+				mul_func: function()
+				{
+					return this.a * this.b;
+				}
+			}
 
-calcBORZ.readBORZ();
-alert('Сумма введенных чисел: ' + calcBORZ.sumBORZ() );
-alert('Произведение введенных чисел: ' + calcBORZ.mulBORZ() );
-</script>
-</body>
+			Calcul.read_func();
+			alert('Сумма введенных чисел: ' + Calcul.sum_func() );
+			alert('Произведение введенных чисел: ' + Calcul.mul_func() );
+		</script>
+	</body>
 </html>
