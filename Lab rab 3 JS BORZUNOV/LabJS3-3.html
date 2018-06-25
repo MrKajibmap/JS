@@ -1,24 +1,24 @@
 <html>
-<body>
-<script>
-function sum(a)
-{
-	var nNumNB = a;
-	function f(b)
-	{
-		nNumNB += b;
-		return f;
-	}
-	f.toString = function()
-	{
-		return nNumNB;
-	};
-	return f;
-}
-alert( sum(1)(2) );
-alert( sum(5)(-1)(2) );
-alert( sum(6)(-1)(-2)(-3) );
-alert( sum(0)(1)(2)(3)(4)(5) );
-</script>
-</body>
+	<body>
+		<script>
+			function Func_Summ(Value_one)
+			{
+				var Num_Val = Value_one;
+				function Function(b)
+				{
+					Num_Val += b;
+					return Function;
+				}
+				f.toString = function()
+				{
+					return Num_Val;
+				};
+				return f;
+			}
+			alert( Func_Summ(1)(2) );
+			alert( Func_Summ(5)(-1)(2) );
+			alert( Func_Summ(6)(-1)(-2)(-3) );
+			alert( Func_Summ(0)(1)(2)(3)(4)(5) );
+		</script>
+	</body>
 </html>
