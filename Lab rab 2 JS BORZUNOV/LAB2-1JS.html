@@ -1,18 +1,18 @@
 <html>
-<body>
-<script>
-function checkAgeNB(ageNB)
-{
-return ageNB>18 ? true : confirm('Родители разрешили?');
-}
+  <body>
+    <script>
+      function Func_Check_Your_Age(Your_Age)
+      {
+      return Your_Age>18 ? true : confirm('Родители разрешили?');
+      }
 
-function checkAgeNB(ageNB)
-{
-return (ageNB > 18) || confirm('Родители разрешили?');
-}
+      function Check_Your_Age(Your_Age)
+      {
+      return (Your_Age > 18) || confirm('Родители разрешили?');
+      }
 
-var ageNB = prompt("Введите ageNB", '');
-checkAgeNB(ageNB);
-</script>
-</body>
+      var Your_Age = prompt("Введите Your_Age", '');
+      checkAgeNB(Your_Age);
+    </script>
+  </body>
 </html>
